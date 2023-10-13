@@ -19,11 +19,13 @@ $pagesInput = $form.querySelector('#pages');
 $submitButton = $form.querySelector('#submit');
 $returnButon = $form.querySelector('#return');
 
-function Book(title, author, pages, read) {
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
+class Book {
+    constructor(title,author,pages,read) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+    }
 }
 
 const addBookToLibrary = () => {
